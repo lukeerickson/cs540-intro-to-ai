@@ -1,0 +1,1 @@
+This repo contains my course projects for CS540 Intro to Artificial Intelligence. In this course, I understood how to implement a neural network using PyTorch, and learned some of the mechanisms present in artificial intelligence, such as Markov Decision Processes, linear regression, and game theory
