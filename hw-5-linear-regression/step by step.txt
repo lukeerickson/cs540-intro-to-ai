@@ -1,0 +1,9 @@
+cd onedrive/desktop/540/hw5
+
+python hw5.py hw5.csv
+
+python hw5.py toy.csv
+
+q3e bottom row is slightly off
+q4 is slightly off
+q6a

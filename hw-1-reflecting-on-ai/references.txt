@@ -1,0 +1,11 @@
+﻿Bessen, James. “How Computer Automation Affects Occupations: Technology, Jobs, and 
+Skills.” Boston University School of Law, Oct. 2016, scholarship.law.bu.edu/cgi/viewcontent.cgi?article=1811&context=faculty_scholarship. 
+
+Bubeck, S., Chandrasekaran, V., Eldan, R., Gehrke, J., Horvitz, E., Kamar, E., Lee, P., Lee, 
+Y.T., Li, Y., Lundberg, S. and Nori, H., 2023. Sparks of artificial general intelligence: Early experiments with gpt-4. arXiv preprint arXiv:2303.12712
+
+Marr, Bernard. “Boost Your Productivity with Generative AI.” Harvard Business Review, 
+27 June 2023, hbr.org/2023/06/boost-your-productivity-with-generative-ai. 
+
+Michael L. Littman, Ifeoma Ajunwa, Guy Berger, Craig Boutilier, Morgan Currie, Finale 
+Doshi-Velez, Gillian Hadfield, Michael C. Horowitz, Charles Isbell, Hiroaki Kitano, Karen Levy, Terah Lyons, Melanie Mitchell, Julie Shah, Steven Sloman, Shannon Vallor, and Toby Walsh. "Gathering Strength, Gathering Storms: The One Hundred Year Study on Artificial Intelligence (AI100) 2021 Study Panel Report." Stanford University, Stanford, CA, September 2021.

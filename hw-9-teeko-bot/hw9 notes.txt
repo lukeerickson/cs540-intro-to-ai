@@ -1,0 +1,66 @@
+open anaconda prompt
+
+cd OneDrive\Desktop\540\hw9
+conda create --name Pytorch
+conda activate Pytorch
+conda deactivate
+
+python game.py
+
+to-do
+implement heuristic_game_value
+
+    def make_move(self, state):
+        """ Selects a (row, col) space for the next move. You may assume that whenever
+        this function is called, it is this player's turn to move.
+
+        Args:
+            state (list of lists): should be the current state of the game as saved in
+                this TeekoPlayer object. Note that this is NOT assumed to be a copy of
+                the game state and should NOT be modified within this method (use
+                place_piece() instead). Any modifications (e.g. to generate successors)
+                should be done on a deep copy of the state.
+
+                In the "drop phase", the state will contain less than 8 elements which
+                are not ' ' (a single space character).
+
+        Return:
+            move (list): a list of move tuples such that its format is
+                    [(row, col), (source_row, source_col)]
+                where the (row, col) tuple is the location to place a piece and the
+                optional (source_row, source_col) tuple contains the location of the
+                piece the AI plans to relocate (for moves after the drop phase). In
+                the drop phase, this list should contain ONLY THE FIRST tuple.
+
+        Note that without drop phase behavior, the AI will just keep placing new markers
+            and will eventually take over the board. This is not a valid strategy and
+            will earn you no points.
+        """
+        
+
+        # drop phase
+        if(self.pieces_played(state) < 8):
+            move = []
+            value, bstate = self.max_value(state, 0)
+            arr1 = np.array(state) == np.array(bstate)
+            arr2 = np.where(arr1 == False) 
+            (row,col) = (arr2[0][0], arr2[1][0])
+            while not state[row][col] == ' ': 
+                (row, col) = (arr2[0][0], arr2[1][0])
+            move.insert(0, (row,col))  
+            return move
+        
+        # move phase
+        move = []
+        value, bstate = self.max_value(state, 0)
+        arr1 = np.array(state) == np.array(bstate)
+        arr2 = np.where(arr1 == False) 
+        if state[arr2[0][0]][arr2[1][0]] == ' ': 
+            (origrow, origcol) = (arr2[0][1],arr2[1][1])
+            (row,col) = (arr2[0][0], arr2[1][0])
+        else:
+            (origrow, origcol) = (arr2[0][0], arr2[1][0])
+            (row, col) = (arr2[0][1], arr2[1][1])
+        move.insert(0, (row, col))
+        move.insert(1, (origrow, origcol)) 
+        return move

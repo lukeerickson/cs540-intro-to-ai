@@ -1,0 +1,8 @@
+open anaconda prompt
+
+cd OneDrive\Desktop\540\hw8
+conda create --name Pytorch
+conda activate Pytorch
+conda deactivate
+
+python funny_puzzle.py

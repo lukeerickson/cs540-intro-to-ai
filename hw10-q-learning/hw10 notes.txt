@@ -1,0 +1,5 @@
+scp -r C:\Users\lukee\OneDrive\Desktop\540\hw10 lerickson@best-linux.cs.wisc.edu:/home/lerickson
+
+ssh lerickson@best-linux.cs.wisc.edu
+python3 -m venv Pytorch
+source Pytorch/bin/activate
